@@ -1,0 +1,103 @@
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f9fd;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    max-width: 400px;
+    width: 90%;
+}
+
+.timer {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    color: #2d3436;
+    font-variant-numeric: tabular-nums;
+}
+
+.controls button {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.75rem;
+    cursor: pointer;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(108, 92, 231, 0.15);
+}
+
+.controls button:hover {
+    background-color: #5f4ed6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(108, 92, 231, 0.25);
+}
+
+#reset {
+    background-color: #ff7675;
+    box-shadow: 0 4px 12px rgba(255, 118, 117, 0.15);
+}
+
+#reset:hover {
+    background-color: #ff6b6b;
+    box-shadow: 0 6px 16px rgba(255, 118, 117, 0.25);
+}
+
+.mode {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: #636e72;
+    font-weight: 500;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#toggle-mode {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    background-color: #00b894;
+    box-shadow: 0 4px 12px rgba(0, 184, 148, 0.15);
+}
+
+#toggle-mode:hover {
+    background-color: #00a88a;
+    box-shadow: 0 6px 16px rgba(0, 184, 148, 0.25);
+}
+
+#toggle-mode.work-mode {
+    background-color: #00b894;  /* Mint for work mode */
+}
+
+#toggle-mode.work-mode:hover {
+    background-color: #00a88a;
+}
+
+#toggle-mode.break-mode {
+    background-color: #fdcb6e;  /* Soft yellow for break mode */
+    box-shadow: 0 4px 12px rgba(253, 203, 110, 0.15);
+}
+
+#toggle-mode.break-mode:hover {
+    background-color: #fdc55c;
+    box-shadow: 0 6px 16px rgba(253, 203, 110, 0.25);
+} 
